@@ -19,7 +19,7 @@ test("renders ContactForm without crashing", () => {
 
 test('name field accepts a max of 3 characters', () => {
 //  Arrange
-  const {getByRole } = render (<App/>);
+  const {getByRole } = render (<input/>);
 
   // Act
 
