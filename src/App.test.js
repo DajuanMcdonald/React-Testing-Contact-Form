@@ -4,14 +4,7 @@ import App from "./App";
 import 'mutationobserver-shim';
 import ContactForm from "./components/ContactForm";
 import '@testing-library/jest-dom/extend-expect';
-import axiosMock from 'axios';
-import {
-  findAllByPlaceholderText,
-  getAllByAltText,
-  getAllByPlaceholderText, getByLabelText,
-  getByPlaceholderText,
-  getByText, getAllByLabelText
-} from "@testing-library/dom";
+import userEvent from "@testing-library/user-event";
 
 
 test("renders App without crashing", () => {
